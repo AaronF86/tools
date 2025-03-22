@@ -4,9 +4,18 @@ pkgs.rustPlatform.buildRustPackage {
   pname = "bannify";
   version = "0.1.0";
 
-  src = ../.;
+  src = builtins.path {
+    path = ../.;
+    filter = path: type:
+      let
+        baseName = baseNameOf path;
+      in
+        baseName != ".git" &&
+        baseName != "target" &&
+        baseName != "result";
+  };
 
-  cargoLock.lockFile = ../../Cargo.lock;
+  cargoLock.lockFile = ../Cargo.lock;
 
   nativeBuildInputs = with pkgs; [
     pkgs.rustPlatform.cargoSetupHook
