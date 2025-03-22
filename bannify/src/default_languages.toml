@@ -1,0 +1,29 @@
+[[languages]]
+name = "Rust"
+single_line_comment = "//"
+extensions = ["rs"]
+
+[[languages]]
+name = "Python"
+single_line_comment = "#"
+extensions = ["py"]
+
+[[languages]]
+name = "JavaScript"
+single_line_comment = "//"
+extensions = ["js", "jsx"]
+
+[[languages]]
+name = "C"
+single_line_comment = "//"
+extensions = ["c", "h"]
+
+[[languages]]
+name = "Markdown"
+single_line_comment = "<!--"
+extensions = ["md"]
+
+[[languages]]
+name = "HTML"
+single_line_comment = "<!--"
+extensions = ["html"]
