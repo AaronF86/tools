@@ -1,5 +1,5 @@
 [package]
-name = "Bannify"
+name = "bannify"
 version = "0.1.0"
 edition = "2021"
 authors = ["Aaron Fulton"]

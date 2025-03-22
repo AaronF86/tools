@@ -3,17 +3,6 @@
 version = 4
 
 [[package]]
-name = "Bannify"
-version = "0.1.0"
-dependencies = [
- "clap",
- "dirs",
- "glob",
- "serde",
- "toml",
-]
-
-[[package]]
 name = "anstream"
 version = "0.6.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -61,6 +50,17 @@ dependencies = [
  "anstyle",
  "once_cell",
  "windows-sys",
+]
+
+[[package]]
+name = "bannify"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "dirs",
+ "glob",
+ "serde",
+ "toml",
 ]
 
 [[package]]
