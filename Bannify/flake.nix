@@ -13,15 +13,12 @@
       in {
         packages = {
           default = import ./nix/build.nix { inherit pkgs; };
+          bannify = import ./nix/build.nix { inherit pkgs; };
         };
 
-        devShells.default = import ./nix/develop.nix { inherit pkgs; };
+        devShells.default = import ./nix/develp.nix { inherit pkgs; };
 
-        nixosModules.default = import ./nix/options.nix { inherit pkgs; };
-
-        checks.default = pkgs.callPackage ./nix/build.nix {};
-
-        formatter = pkgs.nixpkgs-fmt;
+        nixosModules.bannify = import ./nix/options.nix { inherit pkgs; };
       }
     );
 }
