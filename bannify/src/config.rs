@@ -39,7 +39,7 @@ pub fn initialize_config() -> Result<(), Box<dyn std::error::Error>> {
 fn get_config_path() -> PathBuf {
     dirs::home_dir()
         .expect("Could not find home directory")
-        .join(".dotfiles/bannify/languages.toml")
+        .join(".config/bannify_config.toml");
 }
 
 pub fn load_config() -> LanguageConfig {
