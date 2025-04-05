@@ -1,4 +1,9 @@
-//#// banner.rs - Banner Formatter
+//------------------------------------------//
+//                                          //
+// banner.rs - Banner Formatter             //
+//                                          //
+//------------------------------------------//
+
 
 pub fn create_banner(content: &str, comment: &str) -> String {
     let width = content.len().max(40);

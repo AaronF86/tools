@@ -1,4 +1,9 @@
-//#// config.rs - configuration parser
+//------------------------------------------//
+//                                          //
+// config.rs - configuration parser         //
+//                                          //
+//------------------------------------------//
+
 
 use serde::{Deserialize, Serialize};
 use std::fs;
@@ -39,7 +44,7 @@ pub fn initialize_config() -> Result<(), Box<dyn std::error::Error>> {
 fn get_config_path() -> PathBuf {
     dirs::home_dir()
         .expect("Could not find home directory")
-        .join(".config/bannify_config.toml");
+        .join(".config/bannify_config.toml")
 }
 
 pub fn load_config() -> LanguageConfig {

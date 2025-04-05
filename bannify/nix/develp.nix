@@ -1,7 +1,14 @@
-##### nix/develop.nix - Dev Shell
+#------------------------------------------#
+#                                          #
+# nix/develop.nix - Dev Shell              #
+#                                          #
+#------------------------------------------#
 
-{ pkgs }:
+{ pkgs, Bannify }:
 
+let
+  bannify = Bannify.packages.${pkgs.system}.default;
+in
 pkgs.mkShell {
   buildInputs = with pkgs; [
     rustc
@@ -11,6 +18,7 @@ pkgs.mkShell {
     cargo-watch
     rust-analyzer
     git
+    bannify
   ];
 
   shellHook = ''
@@ -22,4 +30,3 @@ pkgs.mkShell {
     export RUST_BACKTRACE=1
   '';
 }
-

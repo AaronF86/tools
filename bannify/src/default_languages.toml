@@ -27,3 +27,23 @@ extensions = ["md"]
 name = "HTML"
 single_line_comment = "<!--"
 extensions = ["html"]
+
+[[languages]]
+name = "Nix"
+single_line_comment = "#"
+extensions = ["nix"]
+
+[[languages]]
+name = "toml"
+single_line_comment = "#"
+extensions = ["toml"]
+
+[[languages]]
+name = "yaml"
+single_line_comment = "#"
+extensions = ["yaml", "yml"]
+
+[[languages]]
+name = "json"
+single_line_comment = "//"
+extensions = ["json"]

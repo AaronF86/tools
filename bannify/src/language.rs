@@ -1,4 +1,9 @@
-//#// languages.rs - language management functions
+//----------------------------------------------//
+//                                              //
+// languages.rs - language management functions //
+//                                              //
+//----------------------------------------------//
+
 
 use crate::config::{load_config, save_config, Language};
 
